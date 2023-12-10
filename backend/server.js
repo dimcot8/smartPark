@@ -48,6 +48,6 @@ app.use("/api/help", helpRouter);
 app.use('/api/savedVehicles', savedVehiclesRoute);
 app.use('/api/profile', profileRoute);
 // Server listening check
-app.listen(process.env.PORT, () =>
+app.listen(process.env.PORT || 4000, () =>
   console.log(`Server running on port ${process.env.PORT}!!`)
 );
