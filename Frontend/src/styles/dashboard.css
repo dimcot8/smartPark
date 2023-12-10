@@ -1,0 +1,213 @@
+/* src/styles/dashboard.css */
+
+.dashboard-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.account-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
+  width: 90%;
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.link {
+  color: #f9fafb;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.account-navigation {
+  flex: 1;
+  border-right: 1px solid #e5e5e5;
+  padding-right: 20px;
+  min-width: 260px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(145deg, #f7f7f7, #e1e1e1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+.text-size-xs-24,
+.text-size-md-30 {
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+  padding: 15px 20px;
+  font-size: 19px;
+  color: #007BFF;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: all 0.3s;
+  border-radius: 8px;
+}
+
+.tab.active {
+  color: #FFFFFF;
+  background: #007BFF;
+}
+
+.tab:hover {
+  color: #0056b3;
+  background: #f1f5f9;
+  transform: translateY(-3px);
+}
+
+.admin-links {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.text-size-xs-30,
+.text-size-md-36 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0;
+  margin-left: 20px;
+}
+
+.account-settings-left {
+  width: 78%;
+  padding-left: 20px;
+}
+
+.panel {
+  background-color: #fff;
+  padding: 24px 32px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #EDEFF1;
+}
+
+.panel-heading {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2E3A59;
+}
+
+.panel-content {
+  font-size: 16px;
+  color: #5A6270;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+.account-email-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.account-email-wrapper p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.btn-link {
+  padding: 12px 20px;
+  margin-right: 10px;
+}
+
+.btn-link:hover {
+  background-color: #0056b3;
+}
+
+.account-settings {
+  flex: 2.5;
+  padding-left: 30px;
+}
+
+.account-email-wrapper button {
+  margin-left: 10px;
+}
+
+.background-color-bp-dark-blue {
+  background-color: #1A2B49;
+  color: #FFFFFF;
+}
+
+.text-size-xs-24,
+.text-size-md-30 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text-align-xs-center {
+  text-align: center;
+}
+
+.text-align-md-left {
+  text-align: left;
+}
+
+.shadowed {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.background-color-blue-light-grey {
+  background-color: #F4F7FA;
+}
+
+.text-color-dark-slate {
+  color: #2E3A59;
+}
+
+.background-color-hover-blue:hover {
+  background-color: #3B5998;
+}
+
+.display-block {
+  display: block;
+}
+
+.background-color-white {
+  background-color: #FFFFFF;
+}
+
+.background-color-blue {
+  background-color: #3B5998;
+}

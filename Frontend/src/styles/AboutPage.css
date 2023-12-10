@@ -1,0 +1,40 @@
+/* src/components/AboutPage.css */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.aboutlogo{
+  height: 150px;
+}
+
+.content-container {
+  max-width: 600px; 
+}
+.navigation-contai{
+  display: flex;
+  justify-content: space-between;
+  align-items:end;
+  margin-bottom: 20px;
+  margin-right: 700px;
+}
+
+.go-back-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.go-back-button:hover {
+  background-color: #0056b3;
+}

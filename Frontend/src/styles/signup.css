@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* > * {
+    font-family: "Poppins", cursive;
+    margin: 0;
+}
+
+/* Body styles */
+body {
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+/* Password container styles */
+.password-container {
+  position: relative;
+}
+
+/* Password input field styles */
+.password-container input {
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* Password toggle button styles */
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px; 
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  color: #007bff; 
+}
+
+/* Center the content in the App */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+}
+
+/* Register container styles */
+.register {
+  max-width: 978px;
+  margin: 0 auto; /* Center the container horizontally */
+  margin-top: 100px;
+  padding: 20px; /* Add some padding */
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.register span {
+  color: #adb5bd;
+}
+
+/* Form styles */
+#form {
+  max-width: 320px;
+  width: 100%;
+  margin: 2em auto;
+}
+
+#form > input,
+.btn {
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+}
+
+#form > input:focus {
+  outline: none;
+}
+
+#form > .btn {
+  background-color: hsl(201, 100%, 14%);
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Flex container styles */
+.flex {
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.register .col-1 {
+  margin: auto;
+  padding: 3em 0;
+}
+
+.register .col-2 img {
+  width: 100%;
+  max-height: 100%;
+  display: block; 
+}
+p{
+  color: black;
+}
+/* Media query for screens wider than 860px */
+@media screen and (min-width: 860px) {
+  /* Show the image for larger screens */
+  .register .col-2 img {
+    display: block;
+  }
+}
+
+

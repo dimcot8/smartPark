@@ -1,0 +1,53 @@
+
+  .spot-tile {
+    position: relative;
+  }
+  
+  .book-now-btn {
+    background-color: #003049;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .favorite-btn-2 {
+    position:relative;
+    top: 0;
+    left: 0;
+    font-size: 1rem;
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .favorite-btn {
+
+ position:absolute;
+  margin-left: 93%;
+    left: 0;
+    font-size: 1.4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  color: gray;
+  transition: color 0.3s ease; 
+  }
+  
+
+.favorite-btn.favorited {
+  color: red; 
+}
+
+
+.favorite-btn-2.favorited {
+  color: red; 
+}
+  .h4{
+    color: black;
+  }

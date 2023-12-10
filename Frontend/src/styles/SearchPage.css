@@ -1,0 +1,169 @@
+/* src/components/searchPage.css */
+.searchtab{
+  padding-left: 20px;
+    width: 78%;
+}
+.search-container {
+  background-color: #fff;
+  padding: 24px 32px;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #EDEFF1;
+}
+.panel-heading3 {
+  background-color: #032d43;
+  color: white;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-radius: 8px 8px 0 0;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  max-width: 950px;
+}
+
+.search-input {
+  width: 70%;
+  padding: 15px;
+  border: 2px solid #003049;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.search-button {
+  width: 25%;
+  height: 20%;
+  background-color: #003049;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.results-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.spot-card {
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.spot-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.spot-price {
+  font-weight: bold;
+  color: #009966;  
+  margin-top: auto;
+  font-size: 20px;
+}
+.search-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.spot-card h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.spot-card p {
+  color: #666;
+  font-size: 18px;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.go-back-button {
+  background-color: #003049;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.go-back-button:hover {
+  background-color: #0056b3;
+}
+
+.spot-list {
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  justify-content: space-around;
+  margin-top: 20px;
+  display: flex;
+  color: black;
+  flex-direction: column;
+}
+
+.spot-tile {
+  color: black;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-now-btn {
+  background-color: #003049;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+.favorite-btn-2 {
+  color: gray; /* or any other color you prefer for the default state */
+  transition: color 0.3s ease; /* Add a transition effect for a smooth color change */
+}
+
+.favorite-btn-2.favorited {
+  color: red; /* or any other color you prefer for the favorited state */
+}
+

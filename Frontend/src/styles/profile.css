@@ -1,0 +1,76 @@
+/* ProfileTab.css */
+.user-profiles-tab {
+    padding-left: 20px;
+    width: 78%;
+}
+
+.panel {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.panel-heading {
+    background-color: #032d43;
+    color: white;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+.panel-content {
+    padding: 20px;
+}
+.profile-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    background-color:grey;
+    text-decoration: #ddd;
+    width: 350px;
+  }
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+button {
+    background-color: #032d43;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+}
+li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: rgb(64, 53, 220);
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c82333;
+}
+
+h3 {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,43 @@
+.notification {
+    position: "relative";
+    width: fit-content;
+    display: inline-flex;
+    
+    
+}
+.iconSection {
+    position: relative;
+    width: fit-content;
+    display: inline-flex;
+}
+.notificationBar {
+    display: block;
+    box-shadow: 2px 3px 17px -3px #8888888c;
+    padding: 15px;
+    right: 0;
+    z-index: 1;
+    background: rgb(76, 194, 240);
+    color: initial;
+}
+.notification:hover .notificationBar {
+    display: block;
+}
+.lineItmes {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.iconBadge {
+    background: red;
+    width: 15px;
+    display: block;
+    text-align: center;
+    height: 15px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 9px;
+    line-height: 15px;
+    position: absolute;
+    right: 0;
+    bottom: 13px;
+    left: 12px;
+}

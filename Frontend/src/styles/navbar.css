@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  color: white;
+  
+}
+
+.search-btn {
+  position: absolute;
+  left: 12%; /* Adjust the left position as needed */
+  top: 13px;
+  padding: 8px 12px;
+  background-color: #032d43;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.not{
+  position: absolute;
+  right: 9%;
+}
+
+.search-btn:hover {
+  background-color:whitesmoke;
+  color:black;
+  text-decoration-style: solid;
+}
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+
+
+
+.navbar ul{
+  display: flex;
+  justify-content: flex-end;
+  text-align: center;
+
+}
+
+.navbar ul li a{
+  
+  color: white;
+  padding: 10px 15px;
+ 
+  margin-right: 5px;
+  border-radius: 15px ;
+}
+
+.navbar ul li a:hover{
+  background-color: white;
+  color: black;
+  transition: .3s ease-in;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80Px;
+  background-color: rgb(24, 128, 240);
+}
+
+.humberger{
+  display: none;
+  margin-right: 35px;  
+}
+
+.navbar-logo img {
+  width: 55px; /* Set the width of your logo */
+  margin-left: 7px;
+}
+.line{
+   width: 25px;
+   margin: 5px 0;
+   height: 2px;
+   background-color: white;
+   padding-right: 10px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  .humberger{
+      display: block;
+      cursor: pointer;
+   }
+
+ 
+
+   .navbar {
+      height:0px;
+      width: 100%;
+      flex-direction: column;
+     
+      background-color: rgb(11, 55, 102);
+        
+      position: absolute;
+      top: 80px;
+      left: 0px;
+      right: 0;
+      transition: 0.2s;
+      overflow: hidden;
+      
+      
+   }
+
+   .active{
+      height: 200px;
+     
+   }
+    
+ 
+
+   .navbar ul {
+    
+      flex-direction: column;
+      text-align: center;
+   
+      transition: .5s;
+      opacity: 0;
+   }
+
+   .active ul{
+      opacity: 1;
+   }
+
+   .navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    transition: .3s ease-in;
+  }
+   .navbar ul li{
+      /* border: 2px solid green; */
+      margin: 10px 0;
+   }
+  
+   .navbar ul li a{
+      padding: 5px 18px;
+      border-radius: 5px;
+      color: white;
+   }
+  
+}

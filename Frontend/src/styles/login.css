@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: "Poppins", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f0f0f2;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center;
+}
+
+.login {
+  max-width: 978px;
+  margin: 0 auto; 
+  margin-top: 100px;
+  padding: 20px; 
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.login span {
+  color: #adb5bd;
+}
+
+#form {
+  max-width: 320px;
+  width: 100%;
+  margin: 2em auto;
+}
+
+#form > input,
+.btn {
+  border: 1px solid #e9ecef;
+  padding: .9em 1em;
+}
+
+#form > input:focus {
+  outline: none;
+}
+
+#form > .btn {
+  background-color: #003049;
+  color: #e9ecef;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.flex {
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.login .col-1 {
+  margin: auto;
+  padding: 3em 0;
+}
+
+.login .col-2 img {
+  width: 100%;
+  max-height: 100%;
+  display: block; 
+}
+
+@media screen and (min-width: 860px) {
+  .login .col-2 img {
+    display: block;
+  }
+}
