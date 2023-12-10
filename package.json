@@ -1,5 +1,10 @@
+
 {
-  "dependencies": {
-    "heroku": "^8.7.1"
+  
+  "scripts": {
+    "build": "npm run build"
   }
+  
+  
 }
+
