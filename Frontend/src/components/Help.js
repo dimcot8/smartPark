@@ -19,7 +19,7 @@ const HelpPage = () => {
         };
     const handleSubmit = async () => {
       try {
-        const response = await fetch("http://localhost:4000/api/help/submit", {
+        const response = await fetch("https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/help/submit", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

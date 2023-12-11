@@ -14,7 +14,7 @@ const ProfileTab = () => {
 
   const fetchUserProfiles = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/api/profile');
+      const response = await axios.get('https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/profile');
       setProfiles(response.data);
       console.log(response.data);
     } catch (error) {
@@ -26,14 +26,14 @@ const ProfileTab = () => {
     try {
       if (selectedProfile) {
         // If selectedProfile is set, update the existing profile
-        await axios.put(`http://localhost:4000/api/profile/${selectedProfile._id}`, profile);
+        await axios.put(`https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/profile/${selectedProfile._id}`, profile);
         setProfiles((prevProfiles) =>
           prevProfiles.map((p) => (p._id === selectedProfile._id ? { ...p, ...profile } : p))
         );
         setSelectedProfile(null); // Reset selectedProfile after updating
       } else {
         // If selectedProfile is not set, add a new profile
-        const response = await axios.post('http://localhost:4000/api/profile', profile);
+        const response = await axios.post('https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/profile', profile);
         setProfiles([...profiles, response.data]);
       }
 
@@ -50,7 +50,7 @@ const ProfileTab = () => {
         return;
       }
 
-      await axios.delete(`http://localhost:4000/api/profile/${profileId}`);
+      await axios.delete(`https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/profile/${profileId}`);
       setProfiles(profiles.filter((profile) => profile._id !== profileId));
       setSelectedProfile(null); // Reset selectedProfile after removal
     } catch (error) {

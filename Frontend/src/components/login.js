@@ -34,7 +34,7 @@ export default function Form() {
   async function onSubmit(data) {
     console.log(data);
     try {
-      const response = await fetch("http://localhost:4000/api/users/login", {
+      const response = await fetch("https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

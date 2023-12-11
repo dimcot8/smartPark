@@ -90,7 +90,7 @@ function SearchPage() {
 
       setMapCenter(latlng);
 
-      const BACKEND_ENDPOINT = `http://localhost:4000/api/search?location=${location}`;
+      const BACKEND_ENDPOINT = `https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/search?location=${location}`;
       const parkingResponse = await fetch(BACKEND_ENDPOINT);
       if (!parkingResponse.ok) {
         throw new Error(

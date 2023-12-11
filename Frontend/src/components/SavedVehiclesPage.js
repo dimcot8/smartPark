@@ -12,7 +12,7 @@ const SavedVehiclesTab = () => {
 
   const fetchSavedVehicles = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/api/savedVehicles');
+      const response = await axios.get('https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/savedVehicles');
       setSavedVehicles(response.data);
       console.log(response.data); 
     } catch (error) {
@@ -22,7 +22,7 @@ const SavedVehiclesTab = () => {
 
   const addSavedVehicle = async (vehicle) => {
     try {
-      const response = await axios.post('http://localhost:4000/api/savedVehicles', vehicle);
+      const response = await axios.post('https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/savedVehicles', vehicle);
       setSavedVehicles([...savedVehicles, response.data]);
       setNewVehicle({ make: '', model: '', plateNumber: '' });
     } catch (error) {
@@ -37,7 +37,7 @@ const SavedVehiclesTab = () => {
         return;
       }
   
-      await axios.delete(`http://localhost:4000/api/savedVehicles/${vehicleId}`);
+      await axios.delete(`https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/savedVehicles/${vehicleId}`);
       setSavedVehicles(savedVehicles.filter((vehicle) => vehicle._id !== vehicleId));
     } catch (error) {
       console.error('Error removing vehicle:', error.message);
