@@ -25,7 +25,7 @@ export default function Form() {
     if (isValid) {
       if (data.password === data.password2) {
         console.log(data);
-        await fetch("http://localhost:4000/api/users/register", {
+        await fetch("https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/users/register", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

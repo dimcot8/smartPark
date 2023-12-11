@@ -8,7 +8,7 @@ function Payment() {
   const [clientSecret, setClientSecret] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/payment/config")
+    fetch("https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/payment/config")
       .then(async (r) => {
         const { publishableKey } = await r.json();
         setStripePromise(loadStripe(publishableKey));
@@ -21,7 +21,7 @@ function Payment() {
   }, []);
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/payment/create-payment-intent", {
+    fetch("https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/payment/create-payment-intent", {
       method: "POST",
       body: JSON.stringify({}),
     })

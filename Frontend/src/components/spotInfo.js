@@ -42,7 +42,7 @@ function SpotInfo() {
   useEffect(() => {
     const fetchSpotDetails = async () => {
       try {
-        const BACKEND_ENDPOINT = `http://localhost:4000/api/search?location=${encodeURIComponent(
+        const BACKEND_ENDPOINT = `https://smartpackbackend-aa75b80dcbbf.herokuapp.com/api/search?location=${encodeURIComponent(
           spot.address
         )}`;
         const parkingResponse = await fetch(BACKEND_ENDPOINT);
